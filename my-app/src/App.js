@@ -2,7 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import ThemeHome from './components/ThemeHome'
 import ThemeKitchen from './components/ThemeKitchen'
-import ButtonElect from './components/ThemeOrder'
+
+import ThemeOrder from './components/ThemeOrder'
+
 
 
 //import logo from './logo.svg';
@@ -18,27 +20,25 @@ function App () {
       <Router>
         <div>
           <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
+           
             <li>
               <Link to="/ThemeOrder">Orden</Link>
             </li>
-            <li>
-              <Link to="/ThemeKitchen">Cocina</Link>
-            </li>
+            
           </ul>
   
           <hr />
   
           <Route exact path="/" component={ ThemeHome } />
-          <Route path="/themeorder" component={ ButtonElect } />
+          <Route path="/themeorder" component={ ThemeOrder } />
           <Route path="/themekitchen" component={ ThemeKitchen } />
         </div>
       </Router>
     );
   
   }
+
+
 
 
 /*
@@ -50,7 +50,6 @@ return (
        <Nav/>  
       <ButtonElect/>
      </div>
-
   );
 }
 */
@@ -58,4 +57,3 @@ return (
 
 
 export default App;
-

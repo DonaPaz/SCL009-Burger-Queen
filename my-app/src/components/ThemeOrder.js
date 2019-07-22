@@ -1,21 +1,38 @@
 import React from 'react';
+import '../App.css'
+import Nav from './Nav';
+import ButtonElect from './ButtonElect';
 
 
-class ButtonElectc extends React.Component {
- 
-  render() {
-   
-     
-      return (
-        <div className="row justify-content-end">
-                 <div className="col-12 col-sm-8 col-md-10 col-lg-8 col-xl-8">
-        <button className="btn-election" >Desayuno</button>
-        <button className="btn-election" >Cena</button>
-     </div>
-     </div>
-     
-      )
-  }
+
+class ThemeOrder extends React.Component {
+ render(){
+    return(
+  <>     
+ <Nav/> 
+ <ButtonElect />
+
+</>
+    );
+ }
+  
+
 }
 
-export default ButtonElectc
+
+/*
+ function App() {
+ 
+return (
+    <div className="App">
+     
+       <Nav/>  
+      <ButtonElect/>
+     </div>
+  );
+}
+*/
+
+
+
+export default ThemeOrder;
