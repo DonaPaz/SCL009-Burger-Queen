@@ -2,7 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import ThemeHome from './components/ThemeHome'
 import ThemeKitchen from './components/ThemeKitchen'
-import ThemeOrder from './components/ThemeOrder'
+import ButtonElect from './components/ThemeOrder'
+
 
 //import logo from './logo.svg';
 //import './App.css';
@@ -31,7 +32,7 @@ function App () {
           <hr />
   
           <Route exact path="/" component={ ThemeHome } />
-          <Route path="/themeorder" component={ ThemeOrder } />
+          <Route path="/themeorder" component={ ButtonElect } />
           <Route path="/themekitchen" component={ ThemeKitchen } />
         </div>
       </Router>
