@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ButtonElection /> Debería devolver categoria almuerzo al clickear   1`] = `undefined`;
